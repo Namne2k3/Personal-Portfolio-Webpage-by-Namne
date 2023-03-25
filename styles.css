@@ -35,7 +35,8 @@ header {
     border-bottom: 1px solid black;
     z-index:1;
 }
-.header-nav {
+.headernav {
+    max-height: 65px;
     height: 100%;
 }
 .header-nav-list {
@@ -48,7 +49,7 @@ header {
 
 .header-nav-list .nav-link {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     height: 100%;
     padding: 21px;
     color: var(--text-color);
@@ -67,21 +68,31 @@ header {
     text-align: center;
     margin-top: var(--header-height);
     border-bottom: 1px solid black;
-    background-image: url(./assets/img/Namne.jpg);
+    /* background-image: url(./assets/img/Namne.jpg);
     background-repeat: no-repeat;
-    /* background-size: cover; */
-    background-position:right ;
+    background-position:right ; */
+}
+.bold {
+    font-weight: bold;
 }
 .info {
     margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 14rem;
+    /* margin-left: 14rem; */
+    align-items: center;
+}
+.info-image #info-image{
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    border-style:groove;
 }
 .info-name {
-    width: 40%;
-    text-align: left;
+
+    width: 100%;
+    text-align: center;
 }
 hr {
     margin: 1.5rem 0;
@@ -245,6 +256,9 @@ hr {
         grid-template-columns: 1fr ;
         row-gap: 40px;
         column-gap: 40px;
+    }
+    .info-image #info-image {
+        display: none;
     }
 }
   
